@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="DetailActivityBinding">
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.detail.DetailActivity">
+
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp100"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            tools:text="Vivek panchal"
+            android:fontFamily="@font/quicksand_bold"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintEnd_toEndOf="@+id/img_logo"
+            app:layout_constraintStart_toStartOf="@+id/img_logo"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo" />
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            tools:text="99685767"
+            android:fontFamily="@font/quicksand_bold"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintEnd_toEndOf="@+id/img_logo"
+            app:layout_constraintStart_toStartOf="@+id/img_logo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            tools:text="New Delhi"
+            android:fontFamily="@font/quicksand_bold"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintEnd_toEndOf="@+id/img_logo"
+            app:layout_constraintStart_toStartOf="@+id/img_logo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
